@@ -49,6 +49,12 @@ nav ul li a:hover {
   color: black;
   text-decoration: none; }
 
+.activo {
+  font-weight: bold;
+  border-bottom: 2px solid #8C8880;
+
+}
+
 .cartas {
   width: 90%;
   height: auto;
@@ -60,17 +66,46 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center; }
 
+  .cartas p {
+    font-family: "Roboto";
+    font-size: 14px;
+    height: 100px;
+    }
+
+  .cartas img {
+    height: 350px;
+    width: auto;
+    
+  }
+
 .color_carta {
   color: #000; }
 
 .ancho_cartas {
-  width: 16rem;
+  width: 18rem;
   margin: 35px;
   height: 580px;
-  display: inline-block; }
+  display: inline-block;
+  overflow: hidden;
+}
 
 .cart_hierro {
   height: 350px; }
+
+.boton {
+  width: 100px;
+  height: 40px;
+  border: #ddb772 solid 2px;
+  margin: auto;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.boton:hover {
+  border-radius: 10px;
+  background-color: #ddb772;
+}
 
 footer {
   width: 100%;
@@ -114,6 +149,11 @@ footer div a {
 footer div a:hover {
   color: #B18942; }
 
+.redes {
+  width: 30px;
+  height: 30px;
+}
+
 /*Class intro_index*/
 .intro_index {
   display: flex;
@@ -142,7 +182,8 @@ footer div a:hover {
   display: grid;
   grid-template-rows: 2, 1fr;
   grid-template-columns: 4, 1fr;
-  grid-template-areas: "integrantes_grid integrantes_grid integrantes_grid integrantes_grid " "delfina_grid delfina_grid francisco_grid francisco_grid ";
+  grid-template-areas: "integrantes_grid integrantes_grid integrantes_grid integrantes_grid "
+ "delfina_grid delfina_grid francisco_grid francisco_grid ";
   justify-items: center;
   align-items: center;
   width: 95%;
@@ -201,6 +242,11 @@ section h3 {
 .button_derecha {
   float: right; }
 
+.main__form__text {
+  width: 100%;
+  padding-left: 10px;
+}
+
 /*Estilo Carrusel*/
 .carousel-item {
   background-size: cover; }
@@ -214,7 +260,8 @@ section h3 {
   display: grid;
   grid-template-columns: 2,1fr;
   grid-template-rows: 2,1fr;
-  grid-template-areas: "centro centro" "productos_madera productos_hierro";
+  grid-template-areas: "centro centro"
+ "productos_madera productos_hierro";
   justify-items: center;
   align-items: center; }
 
@@ -230,12 +277,21 @@ section h3 {
 .productos_hierro {
   grid-area: productos_hierro; }
 
+.row {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 /*entrega SCSS pagina Diseños a Medida*/
 .body--modi {
   display: grid;
   grid-template-columns: 4,1fr;
   grid-template-rows: 5,1fr;
-  grid-template-areas: "header header header header" "section section section section" "main main aside aside" "main main aside aside" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "section section section section"
+ "main main aside aside"
+ "main main aside aside"
+ "footer footer footer footer"; }
 
 .header {
   grid-area: header; }
