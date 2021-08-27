@@ -89,9 +89,6 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
-.cart_hierro {
-  height: 350px; }
-
 .boton {
   width: 100px;
   height: 40px;
@@ -177,6 +174,12 @@ footer div a:hover {
   text-align: center;
   color: #ddb772; }
 
+.titulo__h1 {
+  font-family: "roboto";
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /*Grid Nosotros*/
 .nosotros_grid {
   display: grid;
@@ -191,23 +194,31 @@ footer div a:hover {
   margin: auto; }
 
 .integrantes_grid {
+  font-family: "roboto";
   grid-area: integrantes_grid;
   color: #4d4d4d; }
 
 .delfina_grid {
+  font-family: "roboto";
   grid-area: delfina_grid;
-  text-align: center; }
+  text-align: center; 
+  width: 470px;
+}
 
 .francisco_grid {
+  font-family: "roboto";
   grid-area: francisco_grid;
-  text-align: center; }
+  text-align: center; 
+  width: 470px; 
+}
 
 .info_integrantes {
   text-align: start;
   margin-left: 15px;
   color: #4d4d4d;
   font-family: 'roboto';
-  font-size: 16px; }
+  font-size: 16px; 
+}
 
 section div h4 {
   color: #4d4d4d;
@@ -226,8 +237,11 @@ section h3 {
   margin: auto; }
 
 .pre_form h1 {
+  font-family: "roboto";
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 20px; 
+}
 
 .pre_form div h6 {
   text-align: center;
@@ -245,6 +259,7 @@ section h3 {
 .main__form__text {
   width: 100%;
   padding-left: 10px;
+  border-radius: 5px;
 }
 
 /*Estilo Carrusel*/
@@ -252,6 +267,7 @@ section h3 {
   background-size: cover; }
 
 .pie_carousel p {
+  font-family: "roboto";
   text-align: center;
   padding-top: 30px; }
 
