@@ -49,10 +49,15 @@ nav ul li a:hover {
   color: black;
   text-decoration: none; }
 
+  ul a {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
 .activo {
   font-weight: bold;
   border-bottom: 2px solid #8C8880;
-
 }
 
 .cartas {
@@ -170,9 +175,9 @@ footer div a:hover {
 .sub_titulo {
   font-family: 'MonteCarlo';
   font-size: 55px;
-  font-weight: lighter;
+  font-weight: normal;
   text-align: center;
-  color: #ddb772; }
+  color: #ece4d7; }
 
 .titulo__h1 {
   font-family: "roboto";
