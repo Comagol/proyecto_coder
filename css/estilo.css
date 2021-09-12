@@ -292,10 +292,9 @@ section h3 {
 /*Estilo Listas Carousel*/
 .grid_productos {
   display: grid;
-  grid-template-columns: 2,1fr;
-  grid-template-rows: 2,1fr;
-  grid-template-areas: "centro centro"
- "productos_madera productos_hierro";
+  grid-template-columns: 1,1fr;
+  grid-template-rows: 1,1fr;
+  grid-template-areas: "centro";
   justify-items: center;
   align-items: center; }
 
@@ -303,14 +302,8 @@ section h3 {
   grid-area: centro;
   text-align: center;
   margin-top: 20px;
-  padding: 15px; }
-
-.productos_madera {
-  grid-area: productos_madera; }
-
-.productos_hierro {
-  grid-area: productos_hierro; }
-
+  padding: 25px;
+ }
 .row {
   flex-direction: row;
   justify-content: center;
@@ -586,4 +579,25 @@ section h3 {
     height: 200px;
     padding-bottom: 20px; 
   }
+}
+
+
+/*Menu Hamburguesa*/
+
+.ham {
+  display: none;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.ham span {
+  display: block;
+  background-color: tomato;
+  height: 3px;
+  width: 28px;
+  margin: 10px auto;
+  border-radius: 2px;
 }
