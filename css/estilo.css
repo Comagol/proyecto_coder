@@ -9,7 +9,7 @@ body {
 
 header {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-image: url(../img/fondo.jpg);
   background-position: center;
   background-size: cover;
@@ -17,7 +17,7 @@ header {
 
 nav {
   width: 100%;
-  height: 200px; }
+  height: 100px; }
 
 nav ul {
   display: flex;
@@ -55,18 +55,10 @@ nav ul li a:hover {
     letter-spacing: 2px;
   }
 
-.contenedor__logo {
-  display: flex;
-  margin: auto;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .logo {
   width: 60px;
   height: 60px;
-  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .activo {
@@ -130,7 +122,8 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin-top: 100px; }
+  margin-top: 100px; 
+}
 
 footer h4 {
   color: black;
@@ -189,12 +182,14 @@ footer div a:hover {
   font-size: 55px;
   font-weight: normal;
   text-align: center  ;
-  color: #e7b05d;}
+  color: #e7b05d;
+  padding-top: 100px ;}
 
 .titulo__h1 {
   font-family: "roboto";
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 /*Grid Nosotros*/
@@ -207,27 +202,116 @@ footer div a:hover {
   justify-items: center;
   align-items: center;
   width: 95%;
-  height: 400px;
   margin: auto;
 }
 
 .integrantes_grid {
   font-family: "roboto";
   grid-area: integrantes_grid;
-  color: #4d4d4d; }
+  color: #4d4d4d; 
+  padding-top: 40px;
+}
 
 .delfina_grid {
   font-family: "roboto";
   grid-area: delfina_grid;
   text-align: center; 
-  width: 470px;
+  width: 470px; 
+  padding-top: 40px;
 }
 
 .francisco_grid {
   font-family: "roboto";
   grid-area: francisco_grid;
   text-align: center; 
-  width: 470px; 
+  width: 470px;  
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nosotros_grid {
+    display: grid;
+    grid-template-rows: 4, 1fr;
+    grid-template-columns: 1, 1fr;
+    grid-template-areas: "integrantes_grid"
+   "delfina_grid"
+   "francisco_grid"
+   "footer";
+    justify-items: center;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+  }
+  
+  .integrantes_grid {
+    font-family: "roboto";
+    grid-area: integrantes_grid;
+    color: #4d4d4d; }
+  
+  .delfina_grid {
+    font-family: "roboto";
+    grid-area: delfina_grid;
+    text-align: center; 
+    width: 650px;
+    padding-top: 30px;
+  }
+  
+  .francisco_grid {
+    font-family: "roboto";
+    grid-area: francisco_grid;
+    text-align: center; 
+    width: 650px;
+    padding-top: 30px;
+  }
+  
+  footer {
+    grid-area: footer;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nosotros_grid {
+    display: grid;
+    grid-template-rows: 4, 1fr;
+    grid-template-columns: 1, 1fr;
+    grid-template-areas: "integrantes_grid"
+   "delfina_grid"
+   "francisco_grid"
+   "footer";
+    justify-items: center;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+  }
+  
+  .integrantes_grid {
+    font-family: "roboto";
+    grid-area: integrantes_grid;
+    color: #4d4d4d; }
+  
+  .delfina_grid {
+    font-family: "roboto";
+    grid-area: delfina_grid;
+    text-align: left; 
+    width: 200px;
+    padding-top: 30px;
+  }
+  
+  .francisco_grid {
+    font-family: "roboto";
+    grid-area: francisco_grid;
+    text-align: left; 
+    width: 200px;
+    padding-top: 30px;
+  }
+  
+  footer {
+    grid-area: footer;
+    height: 129px;
+  }
 }
 
 .info_integrantes {
@@ -251,8 +335,10 @@ section h3 {
 
 /*Contactanos*/
 .pre_form {
-  width: 95%;
-  margin: auto; }
+  width: 99%;
+  margin: auto;
+  padding: 10px;
+}
 
 .pre_form h1 {
   font-family: "roboto";
@@ -281,6 +367,11 @@ section h3 {
 }
 
 /*Estilo Carrusel*/
+.carrusel {
+  width: 75%;
+  margin: auto;
+}
+
 .carousel-item {
   background-size: cover; }
 
@@ -309,51 +400,6 @@ section h3 {
   justify-content: center;
   align-items: center;
 }
-/*entrega SCSS pagina Diseños a Medida*/
-.body--modi {
-  display: grid;
-  grid-template-columns: 4,1fr;
-  grid-template-rows: 5,1fr;
-  grid-template-areas: "header header header header"
- "section section section section"
- "main main aside aside"
- "main main aside aside"
- "footer footer footer footer"; }
-
-.header {
-  grid-area: header; }
-
-.main {
-  grid-area: main;
-  padding: 20px; }
-
-.aside {
-  grid-area: aside;
-  padding: 20px; }
-
-.footer {
-  grid-area: footer; }
-
-.section {
-  grid-area: section;
-  padding: 20px;
-  justify-content: flex-start; }
-
-.section__h1 {
-  text-align: center;
-  align-self: center; }
-
-.section__div {
-  text-align: center;
-  align-self: center; }
-
-.aside {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
-
-
 
 /*Grid galerias*/
 
@@ -371,7 +417,7 @@ section h3 {
 
 .titulo_galeria {
   grid-area: titulo_galeria;
-  padding: 25px;
+  padding: 50px;
 
 }
 
@@ -433,12 +479,13 @@ section h3 {
   .galeria {
     display: grid;
     grid-template-columns: 3,1fr;
-    grid-template-rows: 5,1fr;
+    grid-template-rows: 6,1fr;
     grid-template-areas: "titulo_galeria titulo_galeria titulo_galeria "
     "foto_1 foto_2 foto_3"
     "foto_4 foto_5 foto_6"
     "foto_7 foto_8 foto_9"
-    "foto_10 foto_11 foto_12";
+    "foto_10 foto_11 foto_12"
+    "footer footer footer";
     ;
     justify-items: center;
     align-items: center;
@@ -446,7 +493,7 @@ section h3 {
 
   .titulo_galeria {
     grid-area: titulo_galeria;
-    padding: 25px;
+    padding: 40px;
   
   }
   
@@ -509,13 +556,13 @@ section h3 {
   .galeria {
     display: grid;
     grid-template-columns: 3,1fr;
-    grid-template-rows: 5,1fr;
+    grid-template-rows: 6,1fr;
     grid-template-areas: "titulo_galeria titulo_galeria titulo_galeria "
     "foto_1 foto_2 foto_3"
     "foto_4 foto_5 foto_6"
     "foto_7 foto_8 foto_9"
-    "foto_10 foto_11 foto_12";
-    ;
+    "foto_10 foto_11 foto_12"
+    "footer footer footer";
     justify-items: center;
     align-items: center;
   }
@@ -574,6 +621,10 @@ section h3 {
     grid-area: foto_12;
   }
   
+  .pie {
+    grid-area: footer;
+  }
+
   .galeria div img {
     width: 200px;
     height: 200px;
@@ -581,23 +632,114 @@ section h3 {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: 1,1fr;
+    grid-template-rows: 14,1fr;
+    grid-template-areas: "titulo_galeria"
+    "foto_1"
+    "foto_2"
+    "foto_3"
+    "foto_4"
+    "foto_5"
+    "foto_6"
+    "foto_7"
+    "foto_8"
+    "foto_9"
+    "foto_10"
+    "foto_11"
+    "foto_12"
+    "footer";
+    justify-items: center;
+    align-items: center;
+  }
 
+  .titulo_galeria {
+    grid-area: titulo_galeria;
+    padding: 25px;
+  
+  }
+  
+  .foto_1 {
+    grid-area: foto_1;
+  }
+  
+  .foto_2 {
+    grid-area: foto_2;
+  }
+  
+  .foto_3 {
+    grid-area: foto_3;
+  }
+  
+  .foto_4 {
+    grid-area: foto_4;
+  }
+  
+  .foto_5 {
+    grid-area: foto_5;
+  }
+  
+  .foto_6 {
+    grid-area: foto_6;
+  }
+  
+  .foto_7 {
+    grid-area: foto_7;
+  }
+  
+  .foto_8 {
+    grid-area: foto_8;
+  }
+  
+  .foto_9 {
+    grid-area: foto_9;
+  }
+  
+  .foto_10 {
+    grid-area: foto_10;
+  }
+  
+  .foto_11 {
+    grid-area: foto_11;
+  }
+  
+  .foto_12 {
+    grid-area: foto_12;
+    margin-bottom: -80px;
+  }
+  
+  .pie {
+    grid-area: footer;
+  }
+
+  .galeria div img {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 20px; 
+  }
+}
 /*Menu Hamburguesa*/
 
-.ham {
-  display: none;
-  cursor: pointer;
-  border: none;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
+.hamburguesa {
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
 }
 
-.ham span {
-  display: block;
-  background-color: tomato;
-  height: 3px;
-  width: 28px;
-  margin: 10px auto;
-  border-radius: 2px;
+.menu-desplegable {
+  height: 300px;
+}
+
+.item-desplegable {
+  height: 50px;
+  justify-content: center; 
+}
+
+.nav-link {
+  text-align: center;
+}
+.prueba {
+  background-color: #ebe6df;
 }
